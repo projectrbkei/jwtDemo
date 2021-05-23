@@ -42,7 +42,7 @@ namespace jwtDemo
         }
 
         [HttpGet]
-        [Authorize = AuthenticationSchemes = ]
+        [Authorize]
         public IActionResult GetAPIResult([FromQuery] AppUserAPIModel querydata)
         {
             IActionResult responce = Unauthorized();
